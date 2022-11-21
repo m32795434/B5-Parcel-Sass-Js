@@ -90,6 +90,10 @@ body>.container-fluid {
   background: url('../images/background.png')
 }
 
+hr {
+  color: white;
+}
+
 .whiteh1Oh2 {
   color: white;
 }
@@ -126,4 +130,9 @@ body>.container-fluid {
   justify-items: center;
   align-items: center;
   gap: 1rem;
+}
+
+h2.whiteh1Oh2::first-line {
+  color: $warning;
+  font-size: 40px;
 }
