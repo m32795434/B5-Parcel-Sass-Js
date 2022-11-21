@@ -10,17 +10,87 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8">col1</div>
-      <div class="col-md-4">col2</div>
+  <div class="container-fluid">
+    <h3 class="whiteh1Oh2">I am a .container-fluid</h3>
+    <div class="container">
+      <div class="notARow">
+        <h2 class="whiteh1Oh2">I am not a row, And I will show you how it's a full-width div inside a
+          <code>.container</code>
+        </h2>
+      </div>
+      <hr class="my-4">
+
+      <div class="row">
+        <!-- col-md-4//while vw>=768, we will see 3 columns, each one with the size of 4. -->
+        <!-- col-md-4=> md: the min size to apply 4. -->
+        <!-- => below md level(for mobiles)  the columns will automatically stack.  -->
+        <div class="col-4 gridItem">col-4: will never collaps</div>
+        <div class="col-4 gridItem">col-4: will never collaps</div>
+        <div class="col-4 gridItem">col-4: will never collaps</div>
+        <hr class="my-4">
+        <div class="col-sm-4 gridItem">col-sm-4</div>
+        <div class="col-sm-4 gridItem">col-sm-4</div>
+        <div class="col-sm-4 gridItem">col-sm-4</div>
+        <hr class="my-4">
+        <div class="col-md-4 gridItem">col-md-4</div>
+        <div class="col-md-4 gridItem">col-md-4</div>
+        <div class="col-md-4 gridItem">col-md-4</div>
+        <hr class="my-4">
+        <div class="col-lg-8 gridItem">
+          <div class="pb-4">col-lg-8
+          </div>
+          <div class="row">
+            <div class="col-lg-6 gridItem">col-lg-6</div>
+            <div class="col-lg-6 gridItem">col-lg-6</div>
+          </div>
+        </div>
+        <div class="col-lg-4 gridItem gridColWithButton">col-lg-4
+          <button type="button" class="btn btn-primary btn-lg">Primary Large</button>
+        </div>
+        <hr class="my-4">
+      </div>
+      <div class="row gy-4">row gy-4
+        <div class="col-12 gridItem">col-12 gridItem
+        </div>
+        <h1 class="whiteh1Oh2">THE 3 ONE BELOW: if vw<1200px=> <code>.col-6</code> || vw≥1200px=>
+            <code>.col-xl-4 </code></h1>
+        <div class="col-6 col-xl-4 gridItem">col-6 col-xl-4</div>
+        <div class="col-6 col-xl-4 gridItem">col-6 col-xl-4</div>
+        <div class="col-6 col-xl-4 gridItem">col-6 col-xl-4</div>
+      </div>
+      <hr class="my-4">
+      <h1 class="whiteh1Oh2">This 3 below are equals</h1>
+      <h2 class="whiteh1Oh2">ChildsOf: .row .row-cols-1 .row-cols-xl-3</h2>
+      <div class="row row-cols-1 row-cols-xl-3">
+        <div class="col gridItem">col gridItem</div>
+        <div class="col gridItem">col gridItem</div>
+        <div class="col gridItem">col gridItem</div>
+      </div>
     </div>
+    <hr class="my-4">
+    <button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-placement="right"
+      data-bs-custom-class="custom-popover" data-bs-title="Custom popover"
+      data-bs-content="This popover is themed via CSS variables.">
+      Custom popover
+    </button>
+    <button type="button" class="btn btn-primary">Primary Default</button>
+    <button type="button" class="btn btn-primary btn-sm">Primary Small</button>
+    <button type="button" class="btn btn-primary btn-lg">Primary Large</button>
+    <button type="button" class="btn btn-outline-light">Light</button>
+    <button class="btn btn-warning">Warning</button>
+    <button class="btn bt-success" disabled>I am disabled and for that I have pointer-events:none;</button>
+    <hr class="my-4">
+    <h2 class="whiteh1Oh2">If you have wrongly an <<code>a</code>>like a button: </h2>
+    <a class="btn btn-light disabled" aria-disabled="true" role="button">I am an <<code>a</code>> disabled but using a
+        <code>.disabled</code> class
+        from bootstrap. I don't have the href att.</a>
+    <a class="whiteh1Oh2" href="https://getbootstrap.com/docs/5.2/components/buttons/">Link to Bootstrap</a>
+    <hr class="my-4">
+    <h2 class="whiteh1Oh2">If you have to keep the href att., in addition also include a tabindex="-1" att. to prevent
+      from receiving keyboard focus, and use custom JavaScript to disable their functionality altogether.</h2>
+    <a href="#" class="btn btn-primary disabled" tabindex="-1" role="button" aria-disabled="true">Primary link</a>
   </div>
-  <button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-placement="right"
-    data-bs-custom-class="custom-popover" data-bs-title="Custom popover"
-    data-bs-content="This popover is themed via CSS variables.">
-    Custom popover
-  </button>
+
 </body>
 
 </html>
