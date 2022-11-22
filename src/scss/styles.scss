@@ -86,6 +86,7 @@ body {
   padding: 1.5rem;
 }
 */
+
 body>.container-fluid {
   background: url('../images/background.png')
 }
@@ -124,15 +125,12 @@ hr {
   }
 }
 
-.gridColWithButton {
-  display: grid;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  gap: 1rem;
-}
-
 h2.whiteh1Oh2::first-line {
   color: $warning;
   font-size: 40px;
+}
+
+.btn-warning {
+  --bs-btn-active-color: red;
+  --bs-btn-active-bg: rgb(27, 22, 107);
 }
