@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bootstrap w/ Parcel</title>
   <link rel="stylesheet" href="scss/styles.scss">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script type="module" src="js/main.js"></script>
 </head>
 
@@ -14,8 +15,10 @@
     <h3 class="whiteh1Oh2">I am a .container-fluid</h3>
 
     <div class="btn-group">
-      <button type="button" class="pepe btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-        |||
+      <!-- class="dropdown-toggle" is for the arrow in the button. -->
+      <!-- data-bs-toggle is for closing functionality -->
+      <button type="button" class="btn material-icons" data-bs-toggle="dropdown" aria-expanded="false">
+        &#xe5d2
       </button>
       <nav class="dropdown-menu">
         <h6 class="dropdown-header">Header!</h6>
@@ -36,8 +39,8 @@
           <div class="mb-3">
             <label for="exampleDropdownFormEmail1" class="form-label">Email address</label>
             <div class="dropup">
-              <input type="email" class="form-control dropdown-toggle" id="exampleDropdownFormEmail1"
-                placeholder="email@example.com" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="100,30">
+              <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com"
+                data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="100,30">
               <div class="dropdown-menu">
                 <h6 class="dropdown-header">Format:</h6>
                 <hr class="dropdown-divider">

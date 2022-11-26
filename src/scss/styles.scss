@@ -135,12 +135,19 @@ h2.whiteh1Oh2::first-line {
   --bs-btn-active-bg: rgb(27, 22, 107);
 }
 
-.pepe {
-  color: white;
-  font-weight: 800;
-  font-size: 20px;
 
-  &::after {
-    display: none;
-  }
+.material-icons.md-18 {
+  font-size: 18px;
+}
+
+.material-icons.md-24 {
+  font-size: 24px;
+}
+
+.material-icons.md-36 {
+  font-size: 36px;
+}
+
+.material-icons.md-48 {
+  font-size: 48px;
 }
