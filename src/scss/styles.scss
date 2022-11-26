@@ -134,3 +134,13 @@ h2.whiteh1Oh2::first-line {
   --bs-btn-active-color: red;
   --bs-btn-active-bg: rgb(27, 22, 107);
 }
+
+.pepe {
+  color: white;
+  font-weight: 800;
+  font-size: 20px;
+
+  &::after {
+    display: none;
+  }
+}
